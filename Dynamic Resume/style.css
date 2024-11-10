@@ -1,0 +1,165 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f7f3fc; 
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+}
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(to bottom, #eaeafc, #f7f3fc); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+
+fieldset {
+    border: 2px solid #a3a9ff; 
+    padding: 40px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #eaf0ff, #eaeafc); 
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    color: #34495e;
+    font-size: 20px;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #34495e;
+}
+
+input, textarea {
+    width: calc(100% - 2px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #a3a9ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #b1c8ff, #c7d4ff); 
+    color: #34495e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #a3a9ff, #b1c8ff); 
+}
+
+
+#download-pdf {
+    background: linear-gradient(to right, #c3b9ff, #d6caff); 
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#download-pdf:hover {
+    background: linear-gradient(to right, #a3a9ff, #b9a9ff); 
+}
+
+
+#resumeOutput {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #a3a9ff;
+    border-radius: 8px;
+    background-color: #f7f3fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#resumeOutput h2 {
+    color: #0ec7df; 
+}
+
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #a3a9ff;
+    border-radius: 8px;
+    background: linear-gradient(to right, #f2f0ff, #eaeafc); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resume-display h2, #resume-display h3 {
+    color: #6c5ce7;
+    text-align: center;
+}
+
+#resume-display p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Shareable Link Container */
+#shareable-link-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#shareable-link {
+    color: #34495e;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #eaeafc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#shareable-link:hover {
+    background-color: #d6caff;
+}
+
+/* Print Styles */
+@media print {
+    #resume-form, #shareable-link-container, button {
+        display: none;
+    }
+
+    #resume-display {
+        border: none;
+        box-shadow: none;
+        background-color: white;
+    }
+}

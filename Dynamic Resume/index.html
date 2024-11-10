@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dynamic Resume Generator by Sawera Batool</h1>
+
+    <div class="container">
+        <!-- Resume Input Form -->
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+
+            <fieldset>
+                <legend>Professional Information</legend>
+
+                <label for="objective">Objective:</label>
+                <textarea id="objective" placeholder="Enter here" rows="3" required></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your Username" required><br>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter your number" required><br>
+
+                <label for="date of birth">Date of Birth:</label>
+                <input type="text" id="date of birth" placeholder="Enter your DOB" required><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Important Links</legend>
+            
+                <label for="github">GitHub</label>
+                <input type="text" id="github" placeholder="" required><br>
+            
+                <label for="instagram">Instagram</label>
+                <input type="text" id="instagram" placeholder="" required><br>
+            
+                <label for="linkedin">LinkedIn</label>
+                <input type="text" id="linkedin" placeholder="" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="work experience">Work Experience:</label>
+                <textarea id="work experience" placeholder="Enter here" rows="2" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Qualification</legend>
+                <label for="academic qualification">Academic Qualification:</label>
+                <textarea id="academic qualification" placeholder="Enter here" rows="2" required></textarea>
+            </fieldset>
+
+            <!-- Skills Section -->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" placeholder="Enter here" rows="4" required></textarea>
+            </fieldset>
+
+            <!-- Achievements Section -->
+            <fieldset>
+                <legend>Achievements</legend>
+                <label for="achievements">Achievements:</label>
+                <input type="text" id="achievements" placeholder="Achievements" required><br>
+            </fieldset>
+
+            <!-- Languages Section -->
+            <fieldset>
+                <legend>Languages</legend>
+                <label for="languages">Languages:</label>
+                <input type="text" id="languages" placeholder="Languages" required><br>
+            </fieldset>
+
+            <!-- Generate Resume Button -->
+            <button id="generateResumeButton">Generate Resume</button>
+
+
+            <!-- Button to toggle between viewing and editing the resume -->
+            <button type="button" id="editResumeButton">Edit Resume</button>
+
+        </form>
+    </div>
+
+    <div id="resumeOutput">
+        <!-- Resume Will Be Generated Below -->
+    </div>
+
+    <br />
+
+    <!-- Section for the shareable link option -->
+    <div id="shareable-link-container" style=>
+        <h2>Shareable Link</h2>
+        <p>Here is your unique link to view or edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+    </div>
+
+    <!-- Link to TypeScript file compiled to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
